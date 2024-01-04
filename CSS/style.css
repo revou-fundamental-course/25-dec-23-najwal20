@@ -1,0 +1,145 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.welcome-section {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.calculator {
+    background-color: #a1e5ab;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-title {
+    font-size: 24px;
+}
+
+.triangle-image {
+    width: 150px;
+    height: auto;
+}
+
+.calc-section {
+    border: 2px solid #2196F3;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+.form-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.orange-background {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.green-background {
+    background-color: #8BC34A;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.input-label {
+    display: flex;
+    align-items: center;
+}
+
+.input-column,
+.input-row {
+    width: calc(25% - 8px);
+    box-sizing: border-box;
+}
+
+.input-row {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-column input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.calculate-button {
+    width: 100%;
+    margin-top: 10px;
+}
+.calculate-button button:nth-child(2) {
+    background-color: #FF0000; /* Warna merah untuk tombol reset */
+}
+button {
+    background-color: #2196F3;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565C0;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.calculation {
+    font-style: italic;
+    margin-top: 10px;
+}

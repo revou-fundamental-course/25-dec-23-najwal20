@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Matematik Segitiga</title>
+</head>
+<body>
+    <div class="welcome-section">
+        <h2>Welcome to Kalkulator Segitiga</h2>
+        <p>Calculate the area and perimeter of a triangle with ease!</p>
+    </div>
+
+    <div class="calculator">
+        <h1 class="main-title">Kalkulator Matematik Segitiga</h1>
+        <div class="triangle-info">
+            <img src="images/triangle.png" alt="Triangle Image" class="triangle-image">
+            <p>
+                We label sides as <strong>s</strong> (side), <strong>a</strong> (base), and <strong>t</strong> (height).
+                To calculate the area, use the formula:
+                <br><br>
+                <strong>Luas = 1/2 x a x t</strong>
+                <br><br>
+            </p>
+            <img src="images/segitiga.png" alt="Triangle Image" class="triangle-image">
+            <p>
+                We label the 3 sides as <strong>s1, s2 and s3</strong> (side),
+                To calculate the perimeter, use the formula:
+                <br><br>
+                <strong>Keliling = s1 + s2 + s3</strong>
+            </p>
+        </div>
+
+        <div id="area-section" class="calc-section">
+            <div class="section-title orange-background">
+                <h3>Hitung Luas Segitiga</h3>
+            </div>
+            <form id="areaForm">
+                <div class="input-column">
+                    <label for="areaSideA">Panjang Alas (a):</label>
+                    <input type="number" id="areaSideA" required>
+                </div>
+                <div class="input-column">
+                    <label for="areaSideC">Panjang Tinggi (t):</label>
+                    <input type="number" id="areaSideC" required>
+                </div>
+                <div class="calculate-button">
+                    <button type="button" onclick="calculateArea()">Hitung Luas</button>
+                    <button type="button" onclick="resetAreaForm()">Reset</button>
+                </div>
+            </form>
+            <div id="areaResult" class="result"></div>
+            <div id="areaCalculation" class="calculation"></div>
+        </div>
+
+        <div id="perimeter-section" class="calc-section">
+            <div class="section-title orange-background">
+                <h3>Hitung Keliling Segitiga</h3>
+            </div>
+            <form id="perimeterForm">
+                <div class="input-row">
+                    <label for="perimeterSideA">Panjang Sisi A (s1):</label>
+                    <input type="number" id="perimeterSideA" required>
+                    <label for="perimeterSideB">Panjang Sisi B (s2):</label>
+                    <input type="number" id="perimeterSideB" required>
+                    <label for="perimeterSideC">Panjang Sisi C (s3):</label>
+                    <input type="number" id="perimeterSideC" required>
+                </div>
+                <div class="calculate-button">
+                    <button type="button" onclick="calculatePerimeter()">Hitung Keliling</button>
+                    <button type="button" onclick="resetPerimeterForm()">Reset</button>
+                </div>
+            </form>
+            <div id="perimeterResult" class="result"></div>
+            <div id="perimeterCalculation" class="calculation"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
